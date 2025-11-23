@@ -7,6 +7,7 @@ import LandingPageLeaderboards from '../components/landingpage/LandingPageLeader
 import LandingPageAchievements from '../components/landingpage/LandingPageAchievements'
 import logo from '../assets/images/hiyasngsalita_tagline-white-outline.png'
 import LandingPageMusic from '../assets/audios/landing_page_music.ogg'
+import HiyasNgSalitaVideo from '../assets/videos/hiyasngsalita_video.mp4'
 
 import './LandingPage.css'
 
@@ -26,6 +27,13 @@ const LandingPage = ({ musicMuted }) => {
                 <LandingPageBook />
                 <LandingPageLeaderboards />
                 <LandingPageAchievements />
+
+                <div className='landing_page_video-wrapper ohpw center'>
+                    <video className='landing_page_video' controls loop={true} muted={musicMuted} >
+                        <source src={HiyasNgSalitaVideo} type='video/mp4' />
+                    </video>
+                </div>
+
                 <div className='landing_page_message-wrapper ohpw center'>
                     <div className='landing_page_message ohpw center'>
                         {`“Ang Kaalaman ay Kayamanan, at ang Karunungan ay Kapangyarihan. Hiyas ng Salita.”`}

@@ -13,6 +13,12 @@
     width: 80%;
 }
 
+.landing_page_video {
+    min-width: 340px;
+    width: 80%;
+    
+}
+
 .landing_page_message-wrapper {
     flex-direction: column;
     gap: 1rem;
