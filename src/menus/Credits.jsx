@@ -64,6 +64,72 @@ const Credits = ({ closeCreditsMenu }) => {
                         </div>
                     </div>
 
+                    <div className='credit_single-wrapper center'>
+                        <div className='credit_name center'>
+                            JUNIOR JORGE TECSON
+                        </div>
+                        <div className='credit center'>
+                            Promotional Video
+                        </div>
+                    </div>
+
+                    <div className='credit_multiple-wrapper center'>    
+                        <div className='credit center'>
+                            Advertising / Promotion
+                        </div>
+                        <div className='credit_name center'>
+                            LOVELY KAYE LICOS
+                        </div>
+                        <div className='credit_name center'>
+                            MARIA ARLYN ANDREA ABOBO
+                        </div>
+                        <div className='credit_name center'>
+                            ANNE MARGARETTE JOBLE
+                        </div>
+                        <div className='credit_name center'>
+                            JOHN PATRICK OMAÑA
+                        </div>
+                        <div className='credit_name center'>
+                            MARC ARWEN SAMSON
+                        </div>
+                    </div>
+
+                    <div className='credit_multiple-wrapper center'>    
+                        <div className='credit center'>
+                            With Help From
+                        </div>
+                        <div className='credit_name center'>
+                            JOHN LLOYD BAGUISI
+                        </div>
+                        <div className='credit_name center'>
+                            JOHN JAMIEL BUSTILLO
+                        </div>
+                        <div className='credit_name center'>
+                            ANGELO CASACLANG
+                        </div>
+                        <div className='credit_name center'>
+                            SEVERINO ANGELO FERNANDEZ
+                        </div>
+                        <div className='credit_name center'>
+                            JOASH DANIEL LEGASPI
+                        </div>
+                        <div className='credit_name center'>
+                            JASHUA MADELOSO
+                        </div>
+                        <div className='credit_name center'>
+                            JAMILAH MAUTANTE
+                        </div>
+                        <div className='credit_name center'>
+                            VINCENT MUYOT
+                        </div>
+                        <div className='credit_name center'>
+                            FERDIE MARK SEGUIZA
+                        </div>
+                        <div className='credit_name center'>
+                            JAMES STEVEN SIBALA
+                        </div>
+                    </div>
+
                     <div className='credit_multiple-wrapper center'>    
                         <div className='credit center'>
                             Special Thanks
