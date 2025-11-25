@@ -69,7 +69,7 @@ const Credits = ({ closeCreditsMenu }) => {
                             JUNIOR JORGE TECSON
                         </div>
                         <div className='credit center'>
-                            Promotional Video
+                            Event Management
                         </div>
                     </div>
 
