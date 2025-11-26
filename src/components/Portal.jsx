@@ -7,32 +7,32 @@ import {
   	Text,
   	useCursor,
   	useTexture,
-} from '@react-three/drei';
-import { useFrame, useThree } from '@react-three/fiber';
-import { easing } from 'maath';
-import { useEffect, useRef, useState } from 'react';
-import * as THREE from 'three';
-import ExitPortal from './portal/ExitPortal';
+} from '@react-three/drei'
+import { useFrame, useThree } from '@react-three/fiber'
+import { easing } from 'maath'
+import { useEffect, useRef, useState } from 'react'
+import * as THREE from 'three'
+import ExitPortal from './portal/ExitPortal'
 
 const Portal = ({ name, texture, active, handleActivePortal, handleCurrentBook, levelStart, levelStarted, BooksDisplay, books, booksSolved, chapterFinished }) => {
-  	const { ACTION } = CameraControlsImpl;
-  	const [hovered, setHovered] = useState(null);
-  	useCursor(hovered);
-  	const controlsRef = useRef();
-  	const scene = useThree((state) => state.scene);
+  	const { ACTION } = CameraControlsImpl
+  	const [hovered, setHovered] = useState(null)
+  	useCursor(hovered)
+  	const controlsRef = useRef()
+  	const scene = useThree((state) => state.scene)
 
-	const map = useTexture(texture);
-  	const portalMaterial = useRef();
+	const map = useTexture(texture)
+  	const portalMaterial = useRef()
 
   	useFrame((_state, delta) => {
-    	const worldOpen = active === name;
-    	easing.damp(portalMaterial.current, 'blend', worldOpen ? 1 : 0, 0.15, delta);
-  	});
+    	const worldOpen = active === name
+    	easing.damp(portalMaterial.current, 'blend', worldOpen ? 1 : 0, 0.15, delta)
+  	})
 
   	useEffect(() => {
     	if (active) {
-      		const targetPosition = new THREE.Vector3();
-      		scene.getObjectByName(active).getWorldPosition(targetPosition);
+      		const targetPosition = new THREE.Vector3()
+      		scene.getObjectByName(active).getWorldPosition(targetPosition)
       		controlsRef.current.setLookAt(
         		0,
         		0,
@@ -43,9 +43,9 @@ const Portal = ({ name, texture, active, handleActivePortal, handleCurrentBook, 
         		true
       		)
     	} else {
-      		controlsRef.current.setLookAt(0, 0, 10, 0, 0, 0, true);
+      		controlsRef.current.setLookAt(0, 0, 10, 0, 0, 0, true)
     	}
-  	}, [active]);
+  	}, [active])
 
   	return (
     	<>
@@ -106,7 +106,7 @@ const Portal = ({ name, texture, active, handleActivePortal, handleCurrentBook, 
         			</MeshPortalMaterial>
         		</RoundedBox>
     		</>
-  	);
-};
+  	)
+}
 
 export default Portal

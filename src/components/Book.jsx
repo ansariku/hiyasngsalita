@@ -18,7 +18,7 @@ import {
 } from 'three'
 import { degToRad } from 'three/src/math/MathUtils.js'
 
-const pageAtom = atom(0);
+const pageAtom = atom(0)
 
  // Controls the speed of easing.
 const easingFactor = 0.5
@@ -392,19 +392,19 @@ const Book = ({ pictures, cover, back, musicMuted, ...props }) => {
 			front: cover,
 			back: pictures[0],
 		},
-	];
+	]
 
 	for (let i = 1; i < pictures.length - 1; i += 2) {
 		pages.push({
 			front: pictures[i % pictures.length],
 			back: pictures[(i + 1) % pictures.length],
-		});
+		})
 	}
 
 	pages.push({
 		front: pictures[pictures.length - 1],
 		back: back,
-	});
+	})
 
 	// Pre-load each texture that is used.
 	pages.forEach((page) => {
