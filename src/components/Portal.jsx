@@ -83,7 +83,7 @@ const Portal = ({ name, texture, active, handleActivePortal, handleCurrentBook, 
 
       			<RoundedBox
         			name={name}
-        			args={[2, 3.25, 0.1]}
+        			args={[2, 3, 0.1]}
         			onClick={() => {
 						if (!active) {
 							handleActivePortal(name)
@@ -98,6 +98,7 @@ const Portal = ({ name, texture, active, handleActivePortal, handleCurrentBook, 
       			>
         			<MeshPortalMaterial ref={portalMaterial} side={THREE.DoubleSide}>
           				<ambientLight intensity={1} />
+						<pointLight position={[10, 10, 10]} />
 						<Environment preset='sunset' />
           					<mesh>
             					<sphereGeometry args={[4.5, 64, 64]} />
