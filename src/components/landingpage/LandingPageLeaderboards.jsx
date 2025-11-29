@@ -99,11 +99,11 @@ const LandingPageLeaderboards = () => {
 
             <div className='landing_page_leaderboards' >
                 <div className='leaderboard-container ohp center'>
-                    <div className='leaderboard ohpw center'>
-                        <div className='leaderboard_title-wrapper ohpw center'>
+                    <div className='landing_page_leaderboard ohpw center'>
+                        <div className='landing_page_leaderboard_title-wrapper ohpw center'>
                             Leaderboard
                         </div>
-                        <div className='leaderboard_players-wrapper ohp center'>
+                        <div className='landing_page_leaderboard_players-wrapper ohp center'>
                             <div className='top_3_players ohpw center'>
                                 <div className='rank_2_player top_3_player ohph center'>
                                     <div className='top_player_details ohpw center'>

@@ -58,8 +58,8 @@
 }
 
 .landing_page_leaderboards {
-    width: 300px;
-    height: 500px;
+    width: 330px;
+    height: 520px;
     border: 3px solid #333333;
     border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
     background: #f0f0f0;
@@ -68,8 +68,8 @@
 }
 
 .landing_page_leaderboards-back {
-    width: 290px;
-    height: 499px;
+    width: 320px;
+    height: 519px;
     border: 3px solid black;
     position: absolute;
     top: 50%;
@@ -78,4 +78,21 @@
     border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
     background: #f0f0f0;
     z-index: -1;
+}
+
+.landing_page_leaderboard {
+    height: 515px;
+}
+
+.landing_page_leaderboard_title-wrapper {
+    height: 50px;
+    font: 1.25rem 'Nunito-Bold', serif;
+}
+
+.landing_page_leaderboard_players-wrapper{
+    height: 460px;
+    gap: 5px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
