@@ -11,7 +11,7 @@
 .app_parchment {
     position: relative;
     width: 97.5vw;
-	height: 98vh;
+	height: 98svh;
     z-index: -2;
     margin: 0 auto;
     display: flex;

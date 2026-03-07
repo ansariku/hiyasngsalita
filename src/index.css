@@ -28,10 +28,10 @@ html {
   	font-family: -apple-system, BlinkMacSystemFont, 'Nunito-Regular', serif;
   	font-size: 100%;
   	font-synthesis: none;
- 		text-rendering: optimizeLegibility;
- 		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-text-size-adjust: 100%;
+ 	text-rendering: optimizeLegibility;
+ 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
   	-ms-text-size-adjust: 100%;
 }
 
@@ -107,7 +107,7 @@ button {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 102vw; 
-    height: 101vh; 
+    height: 101svh; 
     background-color: rgba(0,0,0,0.5); 
 }
 
@@ -172,7 +172,7 @@ button {
 .svg-bg {
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     z-index: -10;
 }
 
