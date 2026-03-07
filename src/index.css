@@ -28,10 +28,10 @@ html {
   	font-family: -apple-system, BlinkMacSystemFont, 'Nunito-Regular', serif;
   	font-size: 100%;
   	font-synthesis: none;
- 	text-rendering: optimizeLegibility;
- 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%;
+ 		text-rendering: optimizeLegibility;
+ 		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-text-size-adjust: 100%;
   	-ms-text-size-adjust: 100%;
 }
 
@@ -39,7 +39,8 @@ body {
   	display: flex;
   	place-content: center;
   	width: 100vw;
-  	height: 100vh;
+		min-height: 100vh;
+  	min-height: 100svh;
   	background: #f8d794;
 }
 

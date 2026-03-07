@@ -44,7 +44,7 @@ const LandingPage = ({ musicMuted }) => {
                 </div>
 
                 <div className='landing_page_copyright'>
-                    &#169; COPYRIGHT 2025 HIYAS NG SALITA ALL RIGHTS RESERVED
+                    COPYRIGHT &#169; {new Date().getFullYear()} HIYAS NG SALITA ALL RIGHTS RESERVED
                 </div>
             </div>
         </div>
